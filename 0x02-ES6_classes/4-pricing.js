@@ -7,7 +7,6 @@ export default class Pricing {
     this._amount = amount;
   }
 
-  // getter 
   get currency() {
     return this._currency;
   }
@@ -16,7 +15,6 @@ export default class Pricing {
     return this._amount;
   }
 
-  // setter
   set currency(Currency) {
     this._currency = Currency;
   }
@@ -29,7 +27,6 @@ export default class Pricing {
     return `${this._amount} ${this._currency.displayFullCurrency()}`; 
   }
 
-  // static that calculates the amount multiplied by the conversion rate
   static convertPrice(amount, conversionRate) {
     return amount * conversionRate;
   }
